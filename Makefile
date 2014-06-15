@@ -14,7 +14,19 @@ ifndef local_env
 endif
 
 develop: env
-	pip install -r requirements.txt $(pip_args)
+	pip install -r requirements-testing.txt $(pip_args)
+
+test: develop
+	pip install tox
+	tox --recreate
+
+coverage: develop
+	py.test --cov=pushserver --cov-report=$(cov_report) tests
+
+coveralls:
+	pip install python-coveralls
+	make coverage cov_report=term-missing
+	coveralls
 
 clean:
 	-rm -rf env

@@ -7,6 +7,12 @@ app.
 Refer to flask-sse docs for more info about the applicable settings.
 
 
+.. image:: https://api.travis-ci.org/paylogic/pushserver.png
+   :target: https://travis-ci.org/paylogic/pushserver
+.. image:: https://coveralls.io/repos/paylogic/pushserver/badge.png?branch=master
+   :target: https://coveralls.io/r/paylogic/pushserver
+
+
 External dependencies
 ---------------------
 
