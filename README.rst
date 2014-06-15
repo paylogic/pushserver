@@ -2,6 +2,9 @@ pushserver
 ==========
 
 Simple but powerful HTML5 Server-Sent Events (SSE) server for any kind of updates coming from the backend to the client
+This app is the integration of the `Flask-SSE <https://github.com/DazWorrall/flask-sse>`_ into a simple generic flask
+app.
+Refer to flask-sse docs for more info about the applicable settings.
 
 
 Development Environment
