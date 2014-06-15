@@ -1,8 +1,8 @@
 """Pushserver development configuration.
 """
-import logging
+import logging.handlers
 
-from .base import Config as BaseConfig
+from pushserver.settings.base import Config as BaseConfig
 
 
 class Config(BaseConfig):
@@ -10,5 +10,4 @@ class Config(BaseConfig):
     DEBUG = True
     PORT = 8080
     HOST = '127.0.0.1'
-    SERVER_NAME = '{0}:{1}'.format(HOST, PORT)
     LOGFILE = logging.handlers.SysLogHandler.LOG_LOCAL4

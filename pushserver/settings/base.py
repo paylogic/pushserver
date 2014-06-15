@@ -9,6 +9,7 @@ class Config(object):
 
     """
     DEBUG = False
+    TESTING = False
     SERVER_NAME = None
     SENTRY_DSN = None
 

@@ -57,9 +57,9 @@ Sending events to a push server from your app
 
     import json
 
-    from flask.ext.sse import sse, send_event
+    from flask.ext.sse import send_event
 
-    send_event('myevent', json.dumps({"message": "Hello!"}))
+    send_event('myevent', json.dumps({"message": "Hello!"}), channel='mychannel')
 
 
 Client side
@@ -69,7 +69,7 @@ On the client side you just need a javascipt handler function which will be call
 
 ::
 
-    var source = new EventSource('/stream');
+    var source = new EventSource('/stream?channel=mychannel');
     source.onmessage = function (event) {
          alert(event.data);
     };

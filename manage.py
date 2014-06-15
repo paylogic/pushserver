@@ -3,7 +3,6 @@
 from pushserver.server import create_app
 from flask.ext.script import Manager, Server, Shell
 
-
 app = create_app(mode='development')
 manager = Manager(app)
 manager.add_command('shell', Shell())
