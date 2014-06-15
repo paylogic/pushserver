@@ -10,7 +10,8 @@ Refer to flask-sse docs for more info about the applicable settings.
 External dependencies
 ---------------------
 
-Debian dependencies are in DEPENDENCIES file. You can install them automatically by:
+Debian dependencies are in `DEPENDENCIES <https://github.com/paylogic/pushserver/blob/master/DEPENDENCIES>`_ file.
+You can install them automatically by:
 
 ::
 
@@ -77,8 +78,8 @@ Server-Sent Events are supported by recent Firefox, Chrome and Safari browsers.
 Internet Explorer does not yet support Server-Sent Events, but is expected to support them in Version 10.
 There are two recommended Polyfills to support older browsers
 
-* EventSource.js
-* jquery.eventsource
+* `EventSource.js <https://github.com/remy/polyfills/blob/master/EventSource.js>`_
+* `jquery.eventsource <https://github.com/rwldrn/jquery.eventsource>`_
 
 
 Contact
