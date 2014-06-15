@@ -82,6 +82,13 @@ There are two recommended Polyfills to support older browsers
 * `jquery.eventsource <https://github.com/rwldrn/jquery.eventsource>`_
 
 
+Test view
+---------
+
+For testing purpose, there special test view: `<http://localhost:8080/test>`_.
+It will make a browser alert on every ``myevent`` event sent to ``test`` channel.
+
+
 Contact
 -------
 
