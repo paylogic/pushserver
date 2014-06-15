@@ -17,6 +17,7 @@ develop: env
 	pip install -r requirements.txt $(pip_args)
 
 clean:
+	-rm -rf env
 	-rm -rf ./build
 
 build:
