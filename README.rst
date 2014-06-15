@@ -70,7 +70,7 @@ On the client side you just need a javascipt handler function which will be call
 ::
 
     var source = new EventSource('/stream?channel=mychannel');
-    source.onmessage = function (event) {
+    source.addEventListener('myevent', function (event) {
          alert(event.data);
     };
 

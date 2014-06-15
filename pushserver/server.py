@@ -44,6 +44,13 @@ def create_app(name=__name__, mode='development', config=None):
     # Setup endpoints (blueprints)
     load_blueprints(app)
 
+    # set cross domain headers
+    @app.after_request
+    def per_request_callbacks(response):
+        headers = response.headers
+        headers['Access-Control-Allow-Origin'] = '*'
+        return response
+
     return app
 
 

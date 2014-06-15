@@ -2,11 +2,13 @@
 <head>
 </head>
 <body>
+    Testing SSE
+    If you'll send the 'myevent' event to 'test' channel, you'll get an alert messsage with the contents
     <script type="text/javascript">
         var source = new EventSource('{{ url_for('sse.stream', channel='test')}}');
-        source.onmessage = function (event) {
+        source.addEventListener('myevent', function (event) {
              alert(event.data);
-        };
+        });
     </script>
 </body>
 </html>
