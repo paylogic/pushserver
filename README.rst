@@ -24,6 +24,17 @@ Running the development instance
 You can access your push server via http://localhost:8080/stream
 
 
+Production deployment
+---------------------
+
+As you need a non-blocking server, it's recommended to use `gunicorn <http://gunicorn.org/>`_ + `gevent <gevent.org>`_
+or just gevent wsgi server:
+
+::
+
+    gunicorn -k gevent wsgi:app
+
+
 Client side
 -----------
 
