@@ -76,11 +76,13 @@ On the client side you just need a javascipt handler function which will be call
 
 Server-Sent Events are supported by recent Firefox, Chrome and Safari browsers.
 Internet Explorer does not yet support Server-Sent Events, but is expected to support them in Version 10.
+
 There are two recommended Polyfills to support older browsers
 
 * `EventSource.js <https://github.com/remy/polyfills/blob/master/EventSource.js>`_
 * `jquery.eventsource <https://github.com/rwldrn/jquery.eventsource>`_
 
+Mobile browsers have limited support, so test carefully if it works for your target set of browsers.
 
 Test view
 ---------
