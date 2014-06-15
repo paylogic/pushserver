@@ -38,6 +38,19 @@ or just gevent wsgi server:
     gunicorn -k gevent wsgi:app
 
 
+
+Sending events to a push server from your app
+---------------------------------------------
+
+::
+
+    import json
+
+    from flask.ext.sse import sse, send_event
+
+    send_event('myevent', json.dumps({"message": "Hello!"}))
+
+
 Client side
 -----------
 
