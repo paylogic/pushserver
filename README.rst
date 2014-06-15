@@ -7,6 +7,16 @@ app.
 Refer to flask-sse docs for more info about the applicable settings.
 
 
+External dependencies
+---------------------
+
+Debian dependencies are in DEPENDENCIES file. You can install them automatically by:
+
+::
+
+    make dependencies
+
+
 Development Environment
 -----------------------
 
