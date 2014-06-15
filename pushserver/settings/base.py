@@ -15,6 +15,7 @@ class Config(object):
 
     BLUEPRINTS = (
         ('flask.ext.sse.sse', '/stream'),
+        ('pushserver.test.blueprint.blueprint', '/test'),
     )
     SSE_REDIS_HOST = 'localhost'
     SSE_REDIS_PORT = 6379

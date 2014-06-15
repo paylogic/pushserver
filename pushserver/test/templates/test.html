@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+        var source = new EventSource('{{ url_for('sse.stream', channel='test')}}');
+        source.onmessage = function (event) {
+             alert(event.data);
+        };
+    </script>
+</body>
+</html>
