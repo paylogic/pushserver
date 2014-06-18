@@ -61,11 +61,9 @@ Sending events to a push server from your app
 
 ::
 
-    import json
-
     from flask.ext.sse import send_event
 
-    send_event('myevent', json.dumps({"message": "Hello!"}), channel='mychannel')
+    send_event('myevent', {"message": "Hello!"}, channel='mychannel')
 
 
 Client side
